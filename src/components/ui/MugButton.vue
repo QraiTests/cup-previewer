@@ -12,12 +12,12 @@ export default {
 
 <style lang="scss" scoped>
 button {
-	padding: 8px 16px;
+	padding: 20px 16px;
 
 	cursor: pointer;
 	transition: var(--transition);
 
-	font-size: 16px;
+	font-size: 20px;
 
 	background-color: var(--color-1);
 	color: var(--color-text);
@@ -35,6 +35,12 @@ button {
 		&:hover {
 			background: #f2e785;
 		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 8px 16px;
+
+		font-size: 16px;
 	}
 }
 </style>

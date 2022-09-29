@@ -56,15 +56,37 @@ export default {
 }
 
 .mug-panel {
+	width: 100%;
+	padding: 0 16px;
+	margin-top: auto;
+	margin-bottom: 60px;
+
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 
 	input, button {
-		margin: 0 8px;
+		margin: 8px 0;
 	}
 	button {
+		width: 100%;
 		height: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.mug-panel {
+		max-width: 768px;
+		margin: 0;
+
+		flex-direction: row;
+
+		input, button {
+			margin: 0 8px;
+		}
+		button {
+			width: max-content;
+		}
 	}
 }
 </style>
